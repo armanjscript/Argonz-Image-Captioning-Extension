@@ -1,0 +1,29 @@
+{
+  "name": "image-captioner",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "type": "module",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack --watch",
+    "build:css": "tailwindcss src/popup.css -o build/popup.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "copy-webpack-plugin": "^12.0.2",
+    "html-webpack-plugin": "^5.6.3",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "webpack": "^5.97.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^3.1.1",
+    "@xenova/transformers": "^2.17.2",
+    "mini-css-extract-plugin": "^0.11.1"
+  }
+}

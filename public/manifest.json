@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Argonz Image Captioning",
+    "description": "The simple transformer model is used to caption images. All rights reserved to Argonz",
+    "version": "0.0.1",
+    "author": {
+      "email": "armandaneshdoost@gmail.com"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+    "minimum_chrome_version": "92",
+    "action": {
+      "default_title": "Transformers.js",
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/argonz_logo.png",
+        "24": "images/argonz_logo.png",
+        "32": "images/argonz_logo.png"
+      }
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'"
+    },
+    "icons": {
+      "16": "images/argonz_logo.png",
+      "48": "images/argonz_logo.png",
+      "128": "images/argonz_logo.png"
+  }
+  }
